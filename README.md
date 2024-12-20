@@ -1,8 +1,3 @@
-Thanks for clarifying! If your project doesn't use **SQL** or any database and instead relies on a mock data array in the backend, I'll adjust the documentation accordingly.
-
-Here’s the updated documentation based on the fact that the backend directly uses a **Python list** for storing product data:
-
----
 
 ## **E-commerce Sales Chatbot Project Documentation**
 
