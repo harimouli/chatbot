@@ -1,0 +1,198 @@
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  max-width: 1110px;
+  margin: auto;
+  animation: fadeIn 1.2s ease-in-out; 
+  background-color: white; 
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bot-heading {
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3); /* Text glow effect */
+}
+
+@media screen and (min-width: 992px) {
+  .login-form-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.login-website-logo-mobile-image {
+  width: 165px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  transition: transform 0.3s ease;
+}
+
+.login-website-logo-mobile-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@media screen and (min-width: 992px) {
+  .login-website-logo-mobile-image {
+    display: none;
+  }
+}
+
+.login-image {
+  width: 278px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.9; /* Slight transparency */
+}
+
+.login-image:hover {
+  transform: scale(1.05); /* Enlarge slightly on hover */
+  opacity: 1; /* Make fully opaque */
+}
+
+@media screen and (min-width: 992px) {
+  .login-image {
+    width: 60%;
+    max-width: 524px;
+    flex-shrink: 1;
+    margin-right: 20px;
+  }
+}
+
+.login-website-logo-desktop-image {
+  width: 185px;
+  transition: transform 0.3s ease;
+}
+
+.login-website-logo-desktop-image:hover {
+  transform: rotate(10deg); /* Fun rotation effect on hover */
+}
+
+@media screen and (max-width: 991px) {
+  .login-website-logo-desktop-image {
+    display: none;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 350px;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.2);
+  animation: scaleUp 1s ease-in-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form-container {
+    width: 350px;
+    flex-shrink: 0;
+    padding: 64px 48px;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.input-container:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e2e8f0;
+  text-transform: uppercase; /* Make labels stand out */
+}
+
+.username-input-field, .password-input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #243B55;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 8px 16px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.username-input-field:focus, .password-input-field:focus {
+  border-color: #0b69ff;
+  box-shadow: 0 0 8px rgba(11, 105, 255, 0.5);
+  background-color: #1D2B64; /* Highlighted background on focus */
+}
+
+.login-button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-3px); /* Subtle lift on hover */
+  background-color: #243B55; /* Change to dark background on hover */
+}
+
+.error-message {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
